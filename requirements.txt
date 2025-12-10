@@ -15,7 +15,3 @@ requests==2.31.0
 
 # Optional but useful
 plotly==5.17.0
-
-# If you use XGBoost or other models, add them:
-# xgboost==2.0.0
-# lightgbm==4.1.0
