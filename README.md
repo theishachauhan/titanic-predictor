@@ -16,7 +16,7 @@ An interactive web application that predicts whether you would have survived the
   - Sinking to the ocean floor if you don't 💧
   - Character selection based on age/sex
 
-**Try it now:** [Titanic Predictor Live App](https://your-app-url.streamlit.app)
+**Try it now:** [Titanic Predictor Live App](https://titanic-predictor-2day.streamlit.app/)
 
 
 ## 🛠️ Technologies Used
@@ -67,14 +67,16 @@ http://localhost:8501
 titanic-predictor/
 │
 ├── app.py                      # Main Streamlit application
-├── titanic-survival.py         # Model training script
 ├── requirements.txt            # Python dependencies
 │
 ├── data/
 │   └── train.csv              # Titanic dataset from Kaggle
+│   └── test.csv
 │
 ├── models/
 │   └── titanic_model.pkl      # Trained ML model
+│   └── best_model.pkl         # Best Trained model
+│   └── titanic-survival.py    # Model training script
 │
 ├── utils/
 │   ├── __init__.py
@@ -85,10 +87,12 @@ titanic-predictor/
 │
 ├── Dockerfile                  # Docker containerization
 ├── docker-compose.yml          # Docker Compose configuration
-├── kubernetes/                 # Kubernetes deployment files
-│   ├── deployment.yaml
-│   ├── service.yaml
-│   └── ingress.yaml
+│
+├── .streamlit/
+│   └── config.toml
+│
+├── test_setup.py
+├── test_model.py
 │
 └── README.md                   # This file
 ```
